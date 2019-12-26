@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">SMS Pagination</string>
+
+    <!--Repo list activity-->
+    <string name="title_sms_list">Threads Today</string>
+
+    <!--Information / Error-->
+    <string name="error_permission">You must give permission to check you Today\'s Thread!</string>
+    <string name="info_something_went_wrong">Something went wrong\nor\nNo threads Today..</string>
+</resources>

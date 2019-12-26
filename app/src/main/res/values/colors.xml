@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#4A4A4A</color>
+    <color name="colorPrimaryDark">#25282B</color>
+    <color name="colorAccent">#31B057</color>
+
+    <color name="colorWhite">#ffffff</color>
+
+    <!-- font color -->
+    <color name="colorFtBlack">#25282B</color>
+    <color name="colorFtGray">#52575C</color>
+    <color name="colorFtGreen">#31B057</color>
+
+    <!-- divider color -->
+    <color name="colorDivider">#E8E8E8</color>
+    <color name="colorViewPressed">#F5F5F5</color>
+    <color name="colorDividerGreen">#31B057</color>
+</resources>

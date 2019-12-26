@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- font dimension -->
+    <dimen name="ftSmall">@dimen/_10ssp</dimen>
+    <dimen name="ftMedium">@dimen/_12ssp</dimen>
+    <dimen name="ftLarge">@dimen/_16ssp</dimen>
+
+    <!-- margin dimension -->
+    <dimen name="mrgSmall">@dimen/_8sdp</dimen>
+    <dimen name="mrgRegular">@dimen/_14sdp</dimen>
+    <dimen name="mrgMedium">@dimen/_16sdp</dimen>
+
+    <!-- divider dimension -->
+    <dimen name="divider">@dimen/_1sdp</dimen>
+</resources>

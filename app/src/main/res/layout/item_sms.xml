@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/llItemContainer"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/selector_item_sms"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvHeader"
+        style="@style/tvFooter"
+        android:textColor="@color/colorFtGreen"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/mrgSmall"
+        android:layout_marginStart="@dimen/mrgSmall"
+        android:layout_marginEnd="@dimen/mrgSmall"
+        tools:text="0 hours ago." />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/mrgRegular"
+        android:id="@+id/clSms">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvInitial"
+            style="@style/tvToolbar"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintDimensionRatio="1:1"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/tvSender"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="D"
+            android:textColor="@color/colorFtGreen"
+            android:background="@drawable/bg_circle"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvSender"
+            style="@style/tvHeader"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/mrgMedium"
+            app:layout_constraintBottom_toTopOf="@id/tvSms"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/tvInitial"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="This is a name field that can extend till 1 line mac." />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvSms"
+            style="@style/tvFooter"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/mrgMedium"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/tvInitial"
+            app:layout_constraintTop_toBottomOf="@id/tvSender"
+            tools:text="This is a message field that can extend till 2 lines max." />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <include
+        android:id="@+id/inDivider"
+        layout="@layout/divider"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/divider" />
+</androidx.appcompat.widget.LinearLayoutCompat>
