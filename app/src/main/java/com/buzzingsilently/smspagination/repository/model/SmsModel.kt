@@ -1,7 +1,7 @@
 package com.buzzingsilently.smspagination.repository.model
 
 import androidx.recyclerview.widget.DiffUtil
-import com.buzzingsilently.smspagination.utility.AppConstant.FORMAT_TIME
+import com.buzzingsilently.smspagination.utility.AppConstant.FORMAT_DATE_TIME
 import java.text.SimpleDateFormat
 import java.util.*
 
@@ -54,7 +54,7 @@ data class SmsModel(
         return if (time.isEmpty())
             date
         else {
-            val timeFormat = SimpleDateFormat(FORMAT_TIME, Locale.getDefault())
+            val timeFormat = SimpleDateFormat(FORMAT_DATE_TIME, Locale.getDefault())
             date.time = time.toLong()
             val timeString = timeFormat.format(date)
             return timeFormat.parse(timeString)!!

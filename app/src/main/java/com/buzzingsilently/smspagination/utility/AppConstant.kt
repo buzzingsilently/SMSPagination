@@ -4,8 +4,7 @@ object AppConstant {
 
     const val URI_SMS = "content://sms/"
 
-    const val FORMAT_DATE = "MM/dd/yyy"
-    const val FORMAT_TIME = "hh:mm aa"
+    const val FORMAT_DATE_TIME = "MM/dd/yyy hh:mm aa"
     const val TIME_INTERVAL_ONE = 1 * 60 * 60 * 1000
     const val TIME_INTERVAL_TWO = 2 * 60 * 60 * 1000
     const val TIME_INTERVAL_THREE = 3 * 60 * 60 * 1000
