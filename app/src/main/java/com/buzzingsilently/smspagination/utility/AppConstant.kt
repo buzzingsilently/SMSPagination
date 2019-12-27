@@ -17,7 +17,8 @@ object AppConstant {
     const val NOTIFICATION_CHANNEL = "1234554321"
 
     //SQL constants
-    const val SQL_DESC = "desc"
+    const val SQL_DESC = "DESC"
     const val SQL_LIMIT = "LIMIT"
     const val SQL_AND = "AND"
+    const val SQL_ORDER_BY = "ORDER BY"
 }

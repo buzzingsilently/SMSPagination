@@ -3,7 +3,6 @@ package com.buzzingsilently.smspagination.viewmodel
 import android.app.Application
 import androidx.lifecycle.AndroidViewModel
 import androidx.lifecycle.LiveData
-import androidx.lifecycle.MutableLiveData
 import androidx.paging.LivePagedListBuilder
 import androidx.paging.PagedList
 import com.buzzingsilently.smspagination.repository.datasource.SmsDataSource

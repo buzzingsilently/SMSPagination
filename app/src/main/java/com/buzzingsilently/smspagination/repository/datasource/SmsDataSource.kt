@@ -36,10 +36,10 @@ class SmsDataSource(private val context: Context) : PositionalDataSource<SmsMode
             StringBuilder(Telephony.Sms.DATE).append(" ").append(AppConstant.SQL_DESC).append(" ")
                 .append(SQL_LIMIT).append(" ").append("1").toString()
         val query = StringBuilder(StringBuilder(Telephony.Sms.DATE)).append(" > ")
-            .append(AppUtility.getTodayDate()).toString()
+            .append(AppUtility.getTodayDate()).append(" ").toString()
         val contentResolver = context.contentResolver
         val cursor: Cursor? =
-            contentResolver.query(smsUri, arrayOf(Telephony.Sms._ID), query, null, order)
+            contentResolver.query(smsUri, arrayOf(Telephony.Sms._ID, Telephony.Sms.DATE), query, null, order)
         if (cursor == null) {
             return firstId
         } else {
@@ -63,7 +63,7 @@ class SmsDataSource(private val context: Context) : PositionalDataSource<SmsMode
         val query = StringBuilder(StringBuilder(Telephony.Sms.DATE)).append(" > ")
             .append(AppUtility.getTodayDate()).append(" ").append(SQL_AND).append(" ")
             .append(Telephony.Sms._ID)
-            .append(" < ").append(id).toString()
+            .append(" <= ").append(id).append(" ").toString()
         val contentResolver = context.contentResolver
         val cursor: Cursor? =
             contentResolver.query(smsUri, null, query, null, order)
